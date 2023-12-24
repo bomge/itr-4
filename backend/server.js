@@ -18,10 +18,10 @@ const corsConfig = {
 }
 
 // app.use(credentials)
-app.use(cors(cors({
-  origin: 'https://resonant-faun-ce409d.netlify.app',
+app.use(cors({
+  origin: 'https://itra4-back.onrender.com',
   credentials: true
-})))
+}))
 app.use(express.json())
 app.use(cookieParser())
 
