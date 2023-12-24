@@ -1,0 +1,5 @@
+# Redirects for React routes
+/* /login 200
+/login /login 200
+/register /register 200
+/dash/* /dash/index.html 200

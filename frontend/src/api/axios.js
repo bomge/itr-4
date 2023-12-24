@@ -1,6 +1,6 @@
 import axios from 'axios';
 
-const baseURL = process.env.REACT_APP_BASEURL || 'http://itra4-back.onrender.com';
+const baseURL = process.env.REACT_APP_BASEURL || 'https://itra4-back.onrender.com';
 export default axios.create({
   baseURL
 });
