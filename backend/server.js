@@ -18,16 +18,14 @@ const corsConfig = {
 }
 
 // app.use(credentials)
-app.use(cors())
+app.use(cors(cors({
+  origin: 'https://resonant-faun-ce409d.netlify.app',
+  credentials: true
+})))
 app.use(express.json())
 app.use(cookieParser())
 
-app.use((req, res, next) => {
-  res.header("Access-Control-Allow-Origin", "https://resonant-faun-ce409d.netlify.app"); 
-  // specify origin 
-  res.header("Access-Control-Allow-Credentials", "true");
-  next();
-});
+
 
 const server = require('http').createServer(app)
 
