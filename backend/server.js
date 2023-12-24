@@ -19,7 +19,7 @@ const corsConfig = {
 
 // app.use(credentials)
 app.use(cors({
-  origin: 'https://itra4-back.onrender.com',
+  origin: 'https://resonant-faun-ce409d.netlify.app',
   credentials: true
 }))
 app.use(express.json())
